@@ -54,7 +54,7 @@ public class CursoController {
     }
 
     @PutMapping("/{id}")
-    @ResponseStatus(HttpStatus.ACCEPTED)
+    @ResponseStatus(HttpStatus.OK)
     public Curso atualizar(@PathVariable("id") Long cursoId, @RequestBody Curso curso) {
 
         curso.setId(cursoId);
